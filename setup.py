@@ -1,5 +1,5 @@
 from setuptools import setup
-setup(name='mypy',
+setup(name='mypy-lang',
       version='0.5.0',
       description="Dummy to remind people to switch to 'pip install mypy'",
       author="Gudo van Rossum",
