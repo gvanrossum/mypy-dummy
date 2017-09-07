@@ -3,9 +3,15 @@
 import sys
 
 def main():
-    sys.stderr.write("Mypy-lang is no longer supported. "
-                     "Please run 'pip uninstall mypy-lang' "
-                     "and 'pip install mypy'\n")
+    message = "'mypy-lang' is no longer supported -- the current pip package is 'mypy'"
+    banner = '=' * len(message)
+    sys.stderr.write(banner + '\n')
+    sys.stderr.write(message + '\n')
+    sys.stderr.write(banner + '\n\n')
+    sys.stderr.write("Please run\n"
+                     "    python3 -m pip uninstall mypy-lang\n"
+                     "followed by\n"
+                     "    python3 -m pip install mypy\n")
     sys.exit(2)
 
 if __name__ == '__main__':
